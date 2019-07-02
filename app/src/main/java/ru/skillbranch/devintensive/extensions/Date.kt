@@ -32,7 +32,7 @@ fun Date.humanizeDiff(date: Date = Date()): String {
                     when (Math.abs(diff / MINUTE).toInt()) {
                         0 -> {
                             when (Math.abs(diff / SECOND).toInt()) {
-                                in 0..15 -> if ((diff / SECOND).toInt() > 0) "только что" else "скоро"
+                                in 0..15 -> if ((diff / SECOND).toInt() >= 0) "только что" else "скоро"
                                 else -> if ((diff / SECOND).toInt() > 0) "менее минуты назад" else "более чем через минуту"
                             }
                         }
