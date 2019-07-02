@@ -6,12 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8d3aeda-c2df-480e-8f43-535d129b1ac9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt" afterDir="false" />
-    </list>
+    <list default="true" id="c8d3aeda-c2df-480e-8f43-535d129b1ac9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+            <state relative-caret-position="148">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
@@ -68,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+            <state relative-caret-position="-5">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
               <folding>
                 <element signature="e#489#1230#0" />
               </folding>
@@ -461,12 +456,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Hometask2UnitTest_testMessageAbstractFactory - 2019.07.02 at 18h 10m 56s.xml">
-      <configuration name="Hometask2UnitTest.testMessageAbstractFactory" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="Hometask2UnitTest_testMessageAbstractFactory - 2019.07.02 at 18h 11m 40s.xml">
-      <configuration name="Hometask2UnitTest.testMessageAbstractFactory" configurationId="AndroidJUnit" />
-    </history-entry>
     <history-entry file="Hometask2UnitTest_testMessageAbstractFactory - 2019.07.02 at 18h 12m 12s.xml">
       <configuration name="Hometask2UnitTest.testMessageAbstractFactory" configurationId="AndroidJUnit" />
     </history-entry>
@@ -489,6 +478,12 @@
       <configuration name="Hometask2UnitTest.testTransliteration" configurationId="AndroidJUnit" />
     </history-entry>
     <history-entry file="Hometask2UnitTest_testTransliteration - 2019.07.02 at 19h 22m 49s.xml">
+      <configuration name="Hometask2UnitTest.testTransliteration" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="Hometask2UnitTest_testTransliteration - 2019.07.02 at 19h 23m 02s.xml">
+      <configuration name="Hometask2UnitTest.testTransliteration" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="Hometask2UnitTest_testTransliteration - 2019.07.02 at 19h 23m 26s.xml">
       <configuration name="Hometask2UnitTest.testTransliteration" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
@@ -588,8 +583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+        <state relative-caret-position="-5">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
             <element signature="e#489#1230#0" />
           </folding>
@@ -598,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+        <state relative-caret-position="148">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
