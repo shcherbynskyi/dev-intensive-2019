@@ -10,7 +10,7 @@ const val DAY = 24 * HOUR
 
 
 /**
- * Extension function to refactor data into ukrainian format
+ * TODO ОШИБКА
  */
 fun Date.format(pattern: String = "dd.MM.yyyy HH:mm:ss"): String {
     val dateFormat = SimpleDateFormat(pattern, Locale("ru"))
