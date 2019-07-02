@@ -7,7 +7,7 @@ object Utils {
         if (fullName.isNullOrBlank())
             return Pair(null, null)
 
-        val parts: List<String>? = fullName?.split(" ")
+        val parts: List<String>? = fullName.split(" ")
 
         val firstName = parts?.getOrNull(0)
         val lastName = parts?.getOrNull(1)
@@ -15,71 +15,86 @@ object Utils {
         return firstName to lastName
     }
 
-    fun transliteration(fullName: String, divider: String = " "): String {
-        val literas = mutableMapOf(Pair(String(), String()))
 
-        literas["а"] = "a"
-        literas["б"] = "b"
-        literas["в"] = "v"
-        literas["г"] = "g"
-        literas["д"] = "d"
-        literas["е"] = "e"
-        literas["ё"] = "e"
-        literas["ж"] = "zh"
-        literas["з"] = "z"
-        literas["и"] = "i"
-        literas["й"] = "i"
-        literas["к"] = "k"
-        literas["л"] = "l"
-        literas["м"] = "m"
-        literas["н"] = "n"
-        literas["о"] = "o"
-        literas["п"] = "p"
-        literas["р"] = "r"
-        literas["с"] = "s"
-        literas["т"] = "t"
-        literas["у"] = "u"
-        literas["ф"] = "f"
-        literas["х"] = "h"
-        literas["ц"] = "c"
-        literas["ч"] = "ch"
-        literas["ш"] = "sh"
-        literas["щ"] = "sh'"
-        literas["ъ"] = ""
-        literas["ы"] = "i"
-        literas["ь"] = ""
-        literas["э"] = "e"
-        literas["ю"] = "yu"
-        literas["я"] = "ya"
+    /**
+     * TODO ОШИБКА
+     */
+    fun transliteration(fullName: String?, divider: String = " "): String {
+
+        val literas = mutableMapOf(
+            "а" to "a",
+            "б" to "b",
+            "в" to "v",
+            "г" to "g",
+            "д" to "d",
+            "е" to "e",
+            "ё" to "e",
+            "ж" to "zh",
+            "з" to "z",
+            "и" to "i",
+            "й" to "i",
+            "к" to "k",
+            "л" to "l",
+            "м" to "m",
+            "н" to "n",
+            "о" to "o",
+            "п" to "p",
+            "р" to "r",
+            "с" to "s",
+            "т" to "t",
+            "у" to "u",
+            "ф" to "f",
+            "х" to "h",
+            "ц" to "c",
+            "ч" to "ch",
+            "ш" to "sh",
+            "щ" to "sh'",
+            "ъ" to "",
+            "ы" to "i",
+            "ь" to "",
+            "э" to "e",
+            "ю" to "yu",
+            "я" to "ya"
+        )
 
         val (firstName, lastName) = parseFullName(fullName)
-
-        firstName?.decapitalize()
-        lastName?.decapitalize()
 
         var transFirstName = ""
         var transLastName = ""
 
-        for (it in firstName!!.toCharArray()) {
-            if (literas.containsKey(it.toLowerCase().toString())) {
-                transFirstName += literas.get(it.toLowerCase().toString())
-            }
-            else {
-                transFirstName += it.toLowerCase().toString()
+        if (!firstName.isNullOrBlank()) {
+
+            firstName.decapitalize()
+
+            for (it in firstName.toCharArray()) {
+                if (literas.containsKey(it.toLowerCase().toString())) {
+                    transFirstName += literas.get(it.toLowerCase().toString())
+                }
+                else {
+                    transFirstName += it.toLowerCase().toString()
+                }
             }
         }
 
-        for (it in lastName!!.toCharArray()) {
-            if (literas.containsKey(it.toLowerCase().toString())) {
-                transLastName += literas.get(it.toLowerCase().toString())
-            }
-            else {
-                transLastName += it.toLowerCase().toString()
+        if (!lastName.isNullOrBlank()) {
+
+            lastName.decapitalize()
+
+            for (it in lastName.toCharArray()) {
+                if (literas.containsKey(it.toLowerCase().toString())) {
+                    transLastName += literas.get(it.toLowerCase().toString())
+                }
+                else {
+                    transLastName += it.toLowerCase().toString()
+                }
             }
         }
 
         transFirstName = transFirstName.capitalize()
         transLastName = transLastName.capitalize()
+
+        if (transFirstName.isBlank() || transLastName.isBlank())
+            return "$transFirstName$transLastName"
 
         return "$transFirstName$divider$transLastName"
     }
