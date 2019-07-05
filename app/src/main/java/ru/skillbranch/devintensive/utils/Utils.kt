@@ -99,6 +99,7 @@ object Utils {
         return "$transFirstName$divider$transLastName"
     }
 
+
     fun toInitials(firstName: String?, lastName: String?): String? {
         var initials = ""
 
