@@ -75,50 +75,6 @@ fun Date.add(value: Int, units: TimeUnits = TimeUnits.SECOND): Date {
 }
 
 
-fun TimeUnits.plural(value: Int): String {
-    return when (value % 100) {
-        in 10..19 -> "$value ${
-        when (this) {
-            TimeUnits.SECOND -> "секунд"
-            TimeUnits.MINUTE -> "минут"
-            TimeUnits.HOUR -> "часов"
-            TimeUnits.DAY -> "дней"
-        }
-        }"
-        else -> {
-            when (value % 10) {
-                0, in 5..9 -> "$value ${
-                when (this) {
-                    TimeUnits.SECOND -> "секунд"
-                    TimeUnits.MINUTE -> "минут"
-                    TimeUnits.HOUR -> "часов"
-                    TimeUnits.DAY -> "дней"
-                }
-                }"
-
-                in 2..4 -> "$value ${
-                when (this) {
-                    TimeUnits.SECOND -> "секунды"
-                    TimeUnits.MINUTE -> "минуты"
-                    TimeUnits.HOUR -> "часа"
-                    TimeUnits.DAY -> "дня"
-                }
-                }"
-
-                else -> "$value ${
-                when (this) {
-                    TimeUnits.SECOND -> "секунду"
-                    TimeUnits.MINUTE -> "минуту"
-                    TimeUnits.HOUR -> "час"
-                    TimeUnits.DAY -> "день"
-                }
-                }"
-            }
-        }
-    }
-}
-
-
 fun String.truncate(count: Int = 16): String {
     if (count > this.trim().length)
         return this.trim()
@@ -141,4 +97,51 @@ fun String.stripHtml(): String {
 }
 
 
-enum class TimeUnits { SECOND, MINUTE, HOUR, DAY }
+enum class TimeUnits {
+
+    SECOND, MINUTE, HOUR, DAY;
+
+    fun plural(value: Int): String {
+        return when (value % 100) {
+            in 10..19 -> "$value ${
+            when (this) {
+                SECOND -> "секунд"
+                MINUTE -> "минут"
+                HOUR -> "часов"
+                DAY -> "дней"
+            }
+            }"
+            else -> {
+                when (value % 10) {
+                    0, in 5..9 -> "$value ${
+                    when (this) {
+                        SECOND -> "секунд"
+                        MINUTE -> "минут"
+                        HOUR -> "часов"
+                        DAY -> "дней"
+                    }
+                    }"
+
+                    in 2..4 -> "$value ${
+                    when (this) {
+                        SECOND -> "секунды"
+                        MINUTE -> "минуты"
+                        HOUR -> "часа"
+                        DAY -> "дня"
+                    }
+                    }"
+
+                    else -> "$value ${
+                    when (this) {
+                        SECOND -> "секунду"
+                        MINUTE -> "минуту"
+                        HOUR -> "час"
+                        DAY -> "день"
+                    }
+                    }"
+                }
+            }
+        }
+    }
+
+}
