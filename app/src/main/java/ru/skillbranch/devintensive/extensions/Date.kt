@@ -76,9 +76,7 @@ fun Date.add(value: Int, units: TimeUnits = TimeUnits.SECOND): Date {
 
 
 fun TimeUnits.plural(value: Int): String {
-
     return when (value % 100) {
-
         in 10..19 -> "$value ${
         when (this) {
             TimeUnits.SECOND -> "секунд"
@@ -87,7 +85,6 @@ fun TimeUnits.plural(value: Int): String {
             TimeUnits.DAY -> "дней"
         }
         }"
-
         else -> {
             when (value % 10) {
                 0, in 5..9 -> "$value ${
@@ -118,13 +115,6 @@ fun TimeUnits.plural(value: Int): String {
                 }"
             }
         }
-
-        /*
-        TimeUnits.SECOND -> "$value секунды"
-        TimeUnits.MINUTE -> "$value минуты"
-        TimeUnits.HOUR -> "$value часы"
-        TimeUnits.DAY -> "$value дни"
-        */
     }
 }
 
