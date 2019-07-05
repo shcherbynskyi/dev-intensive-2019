@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d3aeda-c2df-480e-8f43-535d129b1ac9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/ImageMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/ImageMessage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/TextMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/TextMessage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +30,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="199">
+              <caret line="112" selection-start-line="112" selection-end-line="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="113" column="47" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -51,19 +58,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/ImageMessage.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -72,16 +70,16 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/TextMessage.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="-643">
+              <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -98,11 +96,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/User.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/ExampleUnitTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/BaseMessage.kt" />
-        <option value="$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/ImageMessage.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/TextMessage.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" />
+        <option value="$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt" />
       </list>
     </option>
   </component>
@@ -203,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.Hometask2UnitTest.testMessageAbstractFactory">
+  <component name="RunManager" selected="Android JUnit.Hometask2UnitTest.testPlural">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -304,7 +302,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Hometask2UnitTest.testTruncate" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Hometask2UnitTest.testTransliteration" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
         <pattern>
@@ -314,7 +312,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.skillbranch.devintensive" />
       <option name="MAIN_CLASS_NAME" value="ru.skillbranch.devintensive.Hometask2UnitTest" />
-      <option name="METHOD_NAME" value="testTruncate" />
+      <option name="METHOD_NAME" value="testTransliteration" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -398,11 +396,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.Hometask2UnitTest.testPlural" />
+        <item itemvalue="Android JUnit.Hometask2UnitTest.testTransliteration" />
         <item itemvalue="Android JUnit.Hometask2UnitTest.testMessageAbstractFactory" />
         <item itemvalue="Android JUnit.Hometask2UnitTest" />
         <item itemvalue="Android JUnit.Hometask2UnitTest.testStripHtml" />
-        <item itemvalue="Android JUnit.Hometask2UnitTest.testTruncate" />
-        <item itemvalue="Android JUnit.Hometask2UnitTest.testPlural" />
       </list>
     </recent_temporary>
   </component>
@@ -428,35 +426,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Hometask2UnitTest_testStripHtml - 2019.07.04 at 19h 35m 43s.xml">
-      <configuration name="Hometask2UnitTest.testStripHtml" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testTransliteration - 2019.07.05 at 17h 36m 25s.xml">
+      <configuration name="Hometask2UnitTest.testTransliteration" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="Hometask2UnitTest_testStripHtml - 2019.07.04 at 19h 35m 54s.xml">
-      <configuration name="Hometask2UnitTest.testStripHtml" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testPlural - 2019.07.05 at 17h 49m 13s.xml">
+      <configuration name="Hometask2UnitTest.testPlural" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="Hometask2UnitTest_testStripHtml - 2019.07.04 at 19h 36m 25s.xml">
-      <configuration name="Hometask2UnitTest.testStripHtml" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testPlural - 2019.07.05 at 17h 49m 27s.xml">
+      <configuration name="Hometask2UnitTest.testPlural" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="Hometask2UnitTest_testStripHtml - 2019.07.04 at 19h 37m 48s.xml">
-      <configuration name="Hometask2UnitTest.testStripHtml" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testPlural - 2019.07.05 at 17h 49m 54s.xml">
+      <configuration name="Hometask2UnitTest.testPlural" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="Hometask2UnitTest_testStripHtml - 2019.07.04 at 19h 38m 10s.xml">
-      <configuration name="Hometask2UnitTest.testStripHtml" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testPlural - 2019.07.05 at 17h 54m 14s.xml">
+      <configuration name="Hometask2UnitTest.testPlural" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="Hometask2UnitTest_testStripHtml - 2019.07.04 at 19h 38m 28s.xml">
-      <configuration name="Hometask2UnitTest.testStripHtml" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testPlural - 2019.07.05 at 17h 54m 33s.xml">
+      <configuration name="Hometask2UnitTest.testPlural" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="Hometask2UnitTest_testStripHtml - 2019.07.04 at 19h 39m 33s.xml">
-      <configuration name="Hometask2UnitTest.testStripHtml" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testPlural - 2019.07.05 at 18h 02m 28s.xml">
+      <configuration name="Hometask2UnitTest.testPlural" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="Hometask2UnitTest - 2019.07.04 at 19h 43m 17s.xml">
-      <configuration name="Hometask2UnitTest" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testPlural - 2019.07.05 at 18h 02m 45s.xml">
+      <configuration name="Hometask2UnitTest.testPlural" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="Hometask2UnitTest_testMessageAbstractFactory - 2019.07.05 at 15h 05m 39s.xml">
-      <configuration name="Hometask2UnitTest.testMessageAbstractFactory" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testPlural - 2019.07.05 at 18h 09m 27s.xml">
+      <configuration name="Hometask2UnitTest.testPlural" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="Hometask2UnitTest_testMessageAbstractFactory - 2019.07.05 at 15h 08m 45s.xml">
-      <configuration name="Hometask2UnitTest.testMessageAbstractFactory" configurationId="AndroidJUnit" />
+    <history-entry file="Hometask2UnitTest_testPlural - 2019.07.05 at 18h 16m 45s.xml">
+      <configuration name="Hometask2UnitTest.testPlural" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -468,12 +466,12 @@
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Capture Tool" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19213313" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19213313" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="0" weight="0.32993197" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.32993197" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.32993197" />
       <window_info anchor="bottom" id="Android Profiler" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="TODO" order="4" />
@@ -525,10 +523,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/User.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="119">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/TextMessage.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-643">
+          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -539,38 +551,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/TextMessage.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/ImageMessage.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/User.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="394">
+          <caret line="113" column="47" selection-start-line="113" selection-start-column="47" selection-end-line="113" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="64" column="41" lean-forward="true" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+        <state relative-caret-position="199">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>
