@@ -99,11 +99,8 @@ fun String.stripHtml(): String {
     var str = this
 
     while (str.indexOf("<") != -1 && str.indexOf(">") != -1) {
-        val startIndex = str.indexOf("<")
-        val endIndex = str.indexOf(">")
-        val replacement = ""
-        val toBeReplaced = str.substring(startIndex, endIndex + 1)
-        str = str.replace(toBeReplaced, replacement)
+        val toBeReplaced = str.substring(str.indexOf("<"), str.indexOf(">") + 1)
+        str = str.replace(toBeReplaced, "")
     }
 
     str = str.replace("\\s+".toRegex()," ")
