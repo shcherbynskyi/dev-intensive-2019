@@ -76,14 +76,12 @@ fun Date.add(value: Int, units: TimeUnits = TimeUnits.SECOND): Date {
 
 
 fun TimeUnits.plural(value: Int): String {
-
     return when (this) {
         TimeUnits.SECOND -> "$value секунды"
         TimeUnits.MINUTE -> "$value минуты"
         TimeUnits.HOUR -> "$value часы"
         TimeUnits.DAY -> "$value дни"
     }
-
 }
 
 
