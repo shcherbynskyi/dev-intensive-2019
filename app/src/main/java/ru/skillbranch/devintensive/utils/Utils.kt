@@ -21,7 +21,7 @@ object Utils {
      */
     fun transliteration(fullName: String?, divider: String = " "): String {
 
-        val literas = mutableMapOf(
+        val dictionary = mutableMapOf(
             "а" to "a",
             "б" to "b",
             "в" to "v",
@@ -67,8 +67,8 @@ object Utils {
             firstName.decapitalize()
 
             for (it in firstName.toCharArray()) {
-                if (literas.containsKey(it.toLowerCase().toString())) {
-                    transFirstName += literas.get(it.toLowerCase().toString())
+                if (dictionary.containsKey(it.toLowerCase().toString())) {
+                    transFirstName += dictionary.get(it.toLowerCase().toString())
                 }
                 else {
                     transFirstName += it.toLowerCase().toString()
@@ -81,8 +81,8 @@ object Utils {
             lastName.decapitalize()
 
             for (it in lastName.toCharArray()) {
-                if (literas.containsKey(it.toLowerCase().toString())) {
-                    transLastName += literas.get(it.toLowerCase().toString())
+                if (dictionary.containsKey(it.toLowerCase().toString())) {
+                    transLastName += dictionary.get(it.toLowerCase().toString())
                 }
                 else {
                     transLastName += it.toLowerCase().toString()
