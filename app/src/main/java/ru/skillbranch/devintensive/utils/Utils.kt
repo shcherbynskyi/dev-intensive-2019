@@ -16,9 +16,6 @@ object Utils {
     }
 
 
-    /**
-     * TODO ОШИБКА
-     */
     fun transliteration(fullName: String?, divider: String = " "): String {
 
         val dictionary = mutableMapOf(
@@ -57,39 +54,21 @@ object Utils {
             "я" to "ya", "Я" to "Ya"
         )
 
-        val (firstName, lastName) = parseFullName(fullName)
+        var answer = ""
 
-        var transFirstName = ""
-        var transLastName = ""
-
-        if (!firstName.isNullOrBlank()) {
-
-            for (it in firstName.toCharArray()) {
-                if (dictionary.containsKey(it.toString())) {
-                    transFirstName += dictionary.get(it.toString())
-                }
-                else {
-                    transFirstName += it.toString()
-                }
+        fullName?.map {
+            if (dictionary.containsKey(it.toString())) {
+                answer += dictionary.get(it.toString())
+            }
+            else {
+                if (it.toString() == " ")
+                    answer += divider
+                else
+                    answer += it
             }
         }
 
-        if (!lastName.isNullOrBlank()) {
-
-            for (it in lastName.toCharArray()) {
-                if (dictionary.containsKey(it.toString())) {
-                    transLastName += dictionary.get(it.toString())
-                }
-                else {
-                    transLastName += it.toString()
-                }
-            }
-        }
-
-        if (transFirstName.isBlank() || transLastName.isBlank())
-            return "$transFirstName$transLastName"
-
-        return "$transFirstName$divider$transLastName"
+        return answer
     }
 
 
