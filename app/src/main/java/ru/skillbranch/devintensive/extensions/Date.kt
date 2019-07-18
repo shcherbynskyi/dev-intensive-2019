@@ -9,6 +9,11 @@ const val HOUR = 60 * MINUTE
 const val DAY = 24 * HOUR
 
 
+/**
+ * Extension function that formats date to specific pattern
+ * @param pattern - pattern for date formatting
+ * @return string with formatted date
+ */
 fun Date.format(pattern: String = "HH:mm:ss dd.MM.yy"): String {
     val dateFormat = SimpleDateFormat(pattern, Locale("ru"))
     return dateFormat.format(this)
@@ -16,7 +21,9 @@ fun Date.format(pattern: String = "HH:mm:ss dd.MM.yy"): String {
 
 
 /**
- * Extension function to format data into human-friendly type
+ * Extension function that formats data into human-friendly type
+ * @param date - date to format
+ * @return string with formatted date
  */
 fun Date.humanizeDiff(date: Date = Date()): String {
 
@@ -77,6 +84,12 @@ fun Date.humanizeDiff(date: Date = Date()): String {
 }
 
 
+/**
+ * Extension function that adds time to date
+ * @param value - value of time
+ * @param units - time unit
+ * @return changed date
+ */
 fun Date.add(value: Int, units: TimeUnits = TimeUnits.SECOND): Date {
     var time = this.time
     time += when (units) {
@@ -90,10 +103,18 @@ fun Date.add(value: Int, units: TimeUnits = TimeUnits.SECOND): Date {
 }
 
 
+/**
+ * Enumeration class for time units
+ */
 enum class TimeUnits {
 
     SECOND, MINUTE, HOUR, DAY;
 
+    /**
+     * Function to change time unit to plural form if needed
+     * @param value - value of time
+     * @return string with changed time unit
+     */
     fun plural(value: Int): String {
         return when (value % 100) {
             in 10..19 -> "$value ${
@@ -136,5 +157,4 @@ enum class TimeUnits {
             }
         }
     }
-
 }
