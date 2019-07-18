@@ -2,6 +2,12 @@ package ru.skillbranch.devintensive.utils
 
 object Utils {
 
+
+    /**
+     * Function that parses user full name
+     * @param fullName - full name of the user
+     * @return pair of first and last name
+     */
     fun parseFullName(fullName: String?): Pair<String?, String?> {
 
         if (fullName.isNullOrBlank())
@@ -16,6 +22,12 @@ object Utils {
     }
 
 
+    /**
+     * Function that transliterates user full name into English
+     * @param fullName - full name of the user
+     * @param divider - string that divides 2 parts of full name (default - " ")
+     * @return transliterated string
+     */
     fun transliteration(fullName: String?, divider: String = " "): String {
 
         val dictionary = mutableMapOf(
@@ -55,7 +67,6 @@ object Utils {
         )
 
         var answer = ""
-
         fullName?.map {
             if (dictionary.containsKey(it.toString())) {
                 answer += dictionary.get(it.toString())
@@ -67,12 +78,18 @@ object Utils {
                     answer += it
             }
         }
-
         return answer
     }
 
 
+    /**
+     * Function that creates initials out of first and last name of the user
+     * @param firstName - first name of the user
+     * @param lastName - last name of the user
+     * @return string with initials
+     */
     fun toInitials(firstName: String?, lastName: String?): String? {
+
         var initials = ""
 
         if (!firstName.isNullOrBlank()) {
