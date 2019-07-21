@@ -1,6 +1,9 @@
 package ru.skillbranch.devintensive.models
 
-class Bender(var status: Status = Status.NORMAL, var question: Question = Question.NAME) {
+class Bender(
+    var status: Status = Status.NORMAL,
+    var question: Question = Question.NAME
+) {
 
     fun askQuestion(): String = when(question) {
         Question.NAME -> Question.NAME.question
@@ -55,6 +58,5 @@ class Bender(var status: Status = Status.NORMAL, var question: Question = Questi
 
         abstract fun nextQuestion(): Question
     }
-
 
 }
