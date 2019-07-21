@@ -11,21 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d3aeda-c2df-480e-8f43-535d129b1ac9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Activity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/Bender.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_send_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/DoneOnEditorActionListener.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/String.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/String.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/Bender.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/Bender.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,26 +39,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="136" column="29" lean-forward="true" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
+            <state relative-caret-position="384">
+              <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
               <folding>
-                <element signature="e#677#942#0" />
-                <element signature="e#1752#2166#0" />
-                <element signature="e#2194#2266#0" />
-                <element signature="e#2272#2640#0" />
-                <element signature="e#2669#2743#0" />
-                <element signature="e#2749#3128#0" />
-                <element signature="e#3158#3234#0" />
-                <element signature="e#3240#3639#0" />
-                <element signature="e#3667#3739#0" />
-                <element signature="e#3745#4261#0" />
-                <element signature="e#4288#4358#0" />
-                <element signature="e#4364#4710#0" />
-                <element signature="e#4740#4816#0" />
-                <element signature="e#4874#5104#0" />
+                <element signature="e#736#1001#0" />
+                <element signature="e#1811#2225#0" />
+                <element signature="e#2253#2325#0" />
+                <element signature="e#2331#2699#0" />
+                <element signature="e#2728#2802#0" />
+                <element signature="e#2808#3187#0" />
+                <element signature="e#3217#3293#0" />
+                <element signature="e#3299#3698#0" />
+                <element signature="e#3726#3798#0" />
+                <element signature="e#3804#4320#0" />
+                <element signature="e#4347#4417#0" />
+                <element signature="e#4423#4769#0" />
+                <element signature="e#4799#4875#0" />
+                <element signature="e#4933#5163#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/DoneOnEditorActionListener.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#37#192#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Activity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+              <folding>
+                <element signature="e#48#183#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,17 +92,17 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="165">
+              <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/Bender.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="-500">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -119,18 +135,19 @@
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/ImageMessage.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/TextMessage.kt" />
         <option value="$PROJECT_DIR$/app/src/test/java/ru/skillbranch/devintensive/Hometask2UnitTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Date.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/String.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Activity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/Observer.kt" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/MainActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/Bender.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Activity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/DoneOnEditorActionListener.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/MainActivity.kt" />
       </list>
     </option>
   </component>
@@ -147,7 +164,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -190,15 +206,11 @@
               <item name="devintensive" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dev-intensive-2019" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,18 +496,18 @@
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Capture Tool" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16111952" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19969743" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Structure" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="0" weight="0.32993197" />
       <window_info anchor="bottom" id="Run" order="1" weight="0.32993197" />
-      <window_info anchor="bottom" id="Android Profiler" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="TODO" order="4" />
       <window_info anchor="bottom" id="Logcat" order="5" weight="0.32993197" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32993197" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.32993197" />
       <window_info anchor="right" id="Palette&#9;" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -567,29 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#64#208#0" />
-            <element signature="e#124#388#0" />
-            <element signature="e#545#620#0" />
-            <element signature="e#465#2093#0" />
-            <element signature="e#492#1712#0" />
-            <element signature="e#2496#2584#0" />
-            <element signature="e#2163#2533#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/BaseMessage.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/String.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -626,27 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/Chat.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/UserView.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Activity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#48#103#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,13 +660,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/Observer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/Observer.kt" />
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -702,41 +668,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/utils/Utils.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <element signature="e#64#208#0" />
+            <element signature="e#274#538#0" />
+            <element signature="e#545#785#0" />
+            <element signature="e#860#2489#0" />
+            <element signature="e#888#2108#0" />
+            <element signature="e#2156#2461#2" />
+            <element signature="e#2213#2284#1" />
+            <element signature="e#2302#2451#1" />
+            <element signature="e#2496#2716#0" />
+            <element signature="e#2784#3155#0" />
+            <element signature="e#2854#2924#1" />
+            <element signature="e#2964#3033#1" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/MainActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/Chat.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="136" column="29" lean-forward="true" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
-          <folding>
-            <element signature="e#677#942#0" />
-            <element signature="e#1752#2166#0" />
-            <element signature="e#2194#2266#0" />
-            <element signature="e#2272#2640#0" />
-            <element signature="e#2669#2743#0" />
-            <element signature="e#2749#3128#0" />
-            <element signature="e#3158#3234#0" />
-            <element signature="e#3240#3639#0" />
-            <element signature="e#3667#3739#0" />
-            <element signature="e#3745#4261#0" />
-            <element signature="e#4288#4358#0" />
-            <element signature="e#4364#4710#0" />
-            <element signature="e#4740#4816#0" />
-            <element signature="e#4874#5104#0" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/BaseMessage.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/models/Bender.kt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/extensions/Activity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding>
+            <element signature="e#48#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/DoneOnEditorActionListener.kt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#37#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ru/skillbranch/devintensive/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="166" column="8" selection-start-line="166" selection-start-column="8" selection-end-line="166" selection-end-column="8" />
+          <folding>
+            <element signature="e#736#1001#0" />
+            <element signature="e#1811#2225#0" />
+            <element signature="e#2253#2325#0" />
+            <element signature="e#2331#2699#0" />
+            <element signature="e#2728#2802#0" />
+            <element signature="e#2808#3187#0" />
+            <element signature="e#3217#3293#0" />
+            <element signature="e#3299#3698#0" />
+            <element signature="e#3726#3798#0" />
+            <element signature="e#3804#4320#0" />
+            <element signature="e#4347#4417#0" />
+            <element signature="e#4423#4769#0" />
+            <element signature="e#4799#4875#0" />
+            <element signature="e#4933#5163#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,7 +2,6 @@ package ru.skillbranch.devintensive.utils
 
 object Utils {
 
-
     /**
      * Function that parses user full name
      * @param fullName - full name of the user
@@ -20,7 +19,6 @@ object Utils {
 
         return firstName to lastName
     }
-
 
     /**
      * Function that transliterates user full name into English
@@ -80,7 +78,6 @@ object Utils {
         }
         return answer
     }
-
 
     /**
      * Function that creates initials out of first and last name of the user
