@@ -12,10 +12,12 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import ru.skillbranch.devintensive.extensions.hideKeyboard
 import ru.skillbranch.devintensive.extensions.isKeyboardClosed
+import ru.skillbranch.devintensive.extensions.isKeyboardOpen
 import ru.skillbranch.devintensive.models.Bender
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -27,11 +29,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     lateinit var benderObj: Bender
 
-    /**
-     * onCreate() вызывается при первом создании или перезапуске Activity задаётся внешний вид Activity
-     * (UI) через метод setContentView(), инициализируются представления и модели представления
-     * связываются с необходимыми данными и ресурсами
-     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -59,101 +56,41 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 false
             }
         }
-
-
-        Log.d("MainActivity", "onCreate")
-    }
-
-    /**
-     * onStart() UI еще не виден пользователю, но вскоре будет виден, вызывается непосредственно перед
-     * тем, как Activity становится видимой пользователю.
-     * чтение из базы данных
-     * запуск сложной анимации
-     * запуск потоков, отслеживания показаний датчиков, запросов к GPS, сервисов или других процессов,
-     * которые нужны исключительно для обновления пользовательского интерфейса
-     */
-    override fun onStart() {
-        super.onStart()
-        Log.d("MainActivity", "onStart")
-    }
-
-    /**
-     * onResume() вызывается, когда Activity начнет взаимодействовать с пользователем.
-    запуск воспроизведения анимации, аудио и видео
-    регистрации любых BroadcastReceiver или других процессов, которые вы
-    освободили/приостановили в onPause()
-    выполнение любых другие инициализации, которые должны происходить, когда
-    Activity вновь активна.
-     */
-    override fun onResume() {
-        super.onResume()
-        Log.d("MainActivity", "onResume")
-    }
-
-    /**
-     * onRestart() вызывается если Activity возвращается в приоритетный режим после вызова onStop(),
-     * т.е. вызывается после того, как Activity была остановлена и снова была запущена пользователем.
-     * Всегда сопровождается вызовом метода onStart() используется для специальных действий, которые
-     * должны выполняться только при повторном запуске Activity
-     */
-    override fun onRestart() {
-        super.onRestart()
-        Log.d("MainActivity", "onRestart")
-    }
-
-    /**
-     * onPause() вызывается после сворачивания текущей активности или перехода к новому.
-    От onPause() можно перейти к вызову либо onResume(), либо onStop().
-    остановка анимации, аудио и видео
-    сохранение состояния пользовательского ввода (легкие процессы)
-    сохранение в DB если данные должны быть доступны в новой Activity
-    остановка сервисов, подписок, BroadcastReceiver
-     */
-    override fun onPause() {
-        super.onPause()
-        Log.d("MainActivity", "onPause")
-    }
-
-    /**
-     * onStop() вызывается, когда Activity становится невидимым для пользователя.
-     * Это может произойти при её уничтожении, или если была запущена другая Activity
-     * (существующая или новая) перекрывшая окно текущей Activity.
-     * запись в базу данных
-     * приостановка сложной анимации
-     * приостановка потоков, отслеживания показаний датчиков, запросов к GPS, таймеров,
-     * сервисов или других процессов, которые нужны исключительно для обновления
-     * пользовательского интерфейса
-     */
-    override fun onStop() {
-        super.onStop()
-        Log.d("MainActivity", "onStop")
-    }
-
-    /**
-     * OnDestroy() вызывается по окончании работы Activity (пользователь закрывает
-     * приложение через клавишу back, или удаляет из списка активных приложений), при
-     * вызове метода finish()
-     * высвобождение ресурсов дополнительная перестраховка если ресурсы не были выгружены или
-     * процессы не были остановлены ранее
-     */
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("MainActivity", "onDestroy")
     }
 
     override fun onSaveInstanceState(outState: Bundle?) {
         super.onSaveInstanceState(outState)
         outState?.putString("STATUS", benderObj.status.name)
         outState?.putString("QUESTION", benderObj.question.name)
-        Log.d("MainActivity", "onSaveInstanceState")
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.iv_send -> {
-                sendAnswer()
+                if (validateAnswer())
+                    sendAnswer()
+                else
+                    makeErrorMessage()
             }
         }
+    }
+
+    private fun makeErrorMessage() {
+        val errorMessage = when(benderObj.question){
+            Bender.Question.NAME -> "Имя должно начинаться с заглавной буквы"
+            Bender.Question.PROFESSION -> "Профессия должна начинаться со строчной буквы"
+            Bender.Question.MATERIAL -> "Материал не должен содержать цифр"
+            Bender.Question.BDAY -> "Год моего рождения должен содержать только цифры"
+            Bender.Question.SERIAL -> "Серийный номер содержит только цифры, и их 7"
+            else -> "На этом все, вопросов больше нет"
+        }
+        textTxt.text = "$errorMessage \n ${benderObj.question.question}"
+        messageEt.setText("")
+
+    }
+
+    private fun validateAnswer(): Boolean {
+        return benderObj.question.validate(messageEt.text.toString())
     }
 
     private fun sendAnswer() {
@@ -165,6 +102,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         textTxt.text = phrase
 
         hideKeyboard()
+
+        Toast.makeText(applicationContext, "Open? ${isKeyboardClosed()}", Toast.LENGTH_LONG).show()
     }
 
 }
