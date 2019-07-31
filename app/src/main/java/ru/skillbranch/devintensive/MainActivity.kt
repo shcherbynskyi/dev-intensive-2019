@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             Bender.Question.SERIAL -> "Серийный номер содержит только цифры, и их 7"
             else -> "На этом все, вопросов больше нет"
         }
-        textTxt.text = "$errorMessage \n ${benderObj.question.question}"
+        textTxt.text = "$errorMessage\n${benderObj.question.question}"
         messageEt.setText("")
 
     }
