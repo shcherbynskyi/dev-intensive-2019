@@ -76,11 +76,12 @@ object Utils {
                     answer += it
             }
         }
+
         return answer
     }
 
     /**
-     * Function that creates initials out of first and last name of the user
+     * Function that creates initials out of first and last name of the user (John Doe -> JD)
      * @param firstName - first name of the user
      * @param lastName - last name of the user
      * @return string with initials
